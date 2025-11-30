@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,7 +29,7 @@ public class MessageController {
 	}
 	
 	@PostMapping("/add")
-	public void add(MessageRequest messageRequest) {
+	public void add(@RequestBody MessageRequest messageRequest) {
 		this.messageService.add(messageRequest);
 	}
 }
