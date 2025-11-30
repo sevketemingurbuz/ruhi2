@@ -14,7 +14,6 @@ import sozluk.ruhi.entities.concretes.Message;
 
 @RestController
 @RequestMapping("/api/message")
-@CrossOrigin(origins = "*")
 public class MessageController {
 	
 	private final MessageService messageService;
