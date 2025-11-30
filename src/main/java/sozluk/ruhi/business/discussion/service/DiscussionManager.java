@@ -58,6 +58,7 @@ public class DiscussionManager implements DiscussionService{
 		DiscussionSpiritsResponse discussionSpiritsResponse = new DiscussionSpiritsResponse();
 		
 		discussionSpiritsResponse.setTitle(discussion.getTitle());
+		discussionSpiritsResponse.setReleaseDateTime(discussion.getCreatedAt());
 		
 		List<Spirit> spirits = this.spiritDao.getLeadAndSpiritsByDiscussionId(id);
 		List<SpiritDetailResponse> spiritDetailResponses = new ArrayList<SpiritDetailResponse>();

@@ -49,6 +49,6 @@ public class Discussion {
 	private User user;
 	
 	@Column(name= "created_at")
-	private LocalDateTime releaseDateTime = LocalDateTime.now();
+	private LocalDateTime createdAt = LocalDateTime.now();
 	
 }
